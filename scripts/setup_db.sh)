@@ -1,0 +1,8 @@
+#!/bin/bash
+# Setup PostgreSQL for Hossi-911 on Ubuntu
+sudo -u postgres psql -c "CREATE USER hospital_user WITH PASSWORD 'securepass';"
+sudo -u postgres psql -c "CREATE DATABASE hossi_911;"
+sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE hossi_911 TO hospital_user;"
+psql -U hospital_user -d hossi_911 -h localhost -c "CREATE EXTENSION IF NOT EXISTS pgcrypto;"
+psql -U hospital_user -d hossi_911 -h localhost -f database/migrations/001_create_schema.sql
+psql -U hospital_user -d hossi_911 -h localhost -f database/seeds/seed_branches.sql

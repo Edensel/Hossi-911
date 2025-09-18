@@ -1,0 +1,7 @@
+erDiagram
+    BRANCHES ||--o{ USERS : has
+    USERS ||--o{ PATIENTS : is
+    BRANCHES ||--o{ APPOINTMENTS : hosts
+    PATIENTS ||--o{ APPOINTMENTS : books
+    USERS ||--o{ APPOINTMENTS : attends
+    PATIENTS ||--o{ AUDITS : logs

@@ -1,4 +1,4 @@
-# 🏥 Hossi-911 Healthcare Management System
+# Hossi-911 Healthcare Management System
 
 [![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://www.python.org/)
 [![Flask](https://img.shields.io/badge/Flask-3.1+-black.svg)](https://flask.palletsprojects.com/)
@@ -7,30 +7,30 @@
 
 A comprehensive, secure, and scalable healthcare management system built with Flask, designed to streamline patient care and administrative workflows across multiple medical branches.
 
-## 🌟 Features
+## Features
 
-### 🔐 **Security & Authentication**
+### **Security & Authentication**
 - **JWT-based authentication** with secure token management
 - **Role-based access control** (RBAC) for admins, doctors, nurses, and patients
 - **Password encryption** using bcrypt hashing
 - **Rate limiting** to prevent abuse
 - **Data encryption** for sensitive patient information
 
-### 🏥 **Healthcare Management**
+### **Healthcare Management**
 - **Multi-branch support** for county-wide healthcare networks
 - **Patient management** with comprehensive medical records
 - **Appointment scheduling** and management
 - **Branch-specific data isolation** for privacy and compliance
 - **Audit logging** for all system activities
 
-### 🛠 **Technical Excellence**
+### **Technical Excellence**
 - **RESTful API** with comprehensive endpoints
 - **Database migrations** with Alembic
 - **Automated testing** with pytest
 - **CI/CD pipeline** with GitHub Actions
 - **Comprehensive documentation** with OpenAPI specs
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.12+
@@ -99,7 +99,7 @@ A comprehensive, secure, and scalable healthcare management system built with Fl
 
 The API will be available at `http://localhost:5000`
 
-## 📖 API Documentation
+## API Documentation
 
 ### Authentication Endpoints
 
@@ -148,7 +148,7 @@ Content-Type: application/json
 }
 ```
 
-## 🧪 Testing
+## Testing
 
 ### Run Unit Tests
 ```bash
@@ -173,7 +173,7 @@ curl -X GET http://localhost:5000/patients \
   -H "Authorization: Bearer TOKEN"
 ```
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 hossi-911/
@@ -195,7 +195,7 @@ hossi-911/
 └── README.md
 ```
 
-## 🔒 Security Features
+## Security Features
 
 - **JWT Authentication** with 1-hour token expiration
 - **Password Hashing** using bcrypt
@@ -206,7 +206,7 @@ hossi-911/
 - **Data Encryption** for sensitive information
 - **Role-based Access Control**
 
-## 🗃️ Database Schema
+## Database Schema
 
 ### Core Tables
 - **branches** - Healthcare facility locations
@@ -223,7 +223,7 @@ branches ||--o{ appointments : hosts
 patients ||--o{ appointments : books
 ```
 
-## 🚀 Deployment
+## Deployment
 
 ### Local Development
 ```bash
@@ -241,7 +241,7 @@ docker build -t hossi-911 .
 docker run -p 5000:5000 hossi-911
 ```
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -249,18 +249,18 @@ docker run -p 5000:5000 hossi-911
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 📞 Support
 
 For support and questions:
-- 📧 Email: support@hossi911.com
-- 🐛 Issues: [GitHub Issues](https://github.com/your-username/hossi-911/issues)
-- 📖 Documentation: [API Docs](docs/openapi.yaml)
+- Email: support@hossi911.com
+- Issues: [GitHub Issues](https://github.com/your-username/hossi-911/issues)
+- Documentation: [API Docs](docs/openapi.yaml)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Flask framework for the robust web foundation
 - SQLAlchemy for powerful ORM capabilities
@@ -269,6 +269,6 @@ For support and questions:
 
 ---
 
-**Built with ❤️ for healthcare professionals worldwide**
+**Built with for healthcare professionals worldwide**
 
 *Transforming healthcare management, one patient at a time.*
